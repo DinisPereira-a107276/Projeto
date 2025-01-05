@@ -142,9 +142,6 @@ def inter_GUI():
             [sg.Button("Ok", size=(4, 1), font="Arial 11"), sg.Button("Sair", size=(5, 1), font="Arial 11")]
         ]
 
-    #C:\\Users\\maria\\Desktop\\Arquivo\\Escola\\LEB\\2º Ano\\1º Semestre\\Programação\\Projeto
-
-
     def ficheiro():
         global databank
         layout = criar_layout_ficheiro()
@@ -1845,8 +1842,6 @@ def inter_CLI():
             print(f"Erro inesperado: {e}")
             return None
 
-    #C:\\Users\\maria\\Desktop\\Arquivo\\Escola\\LEB\\2º Ano\\1º Semestre\\Programação\\Projeto
-
     def ficheiroCLI():
         global databank
         fnome = input("Insira o nome do ficheiro a carregar: ")
@@ -1887,17 +1882,6 @@ def inter_CLI():
         dicionario_sem_vazios = {chave: valor for chave, valor in dicionario.items() if valor}
             
         return databank.append(dicionario_sem_vazios)
-
-    # UNCHANGED CODE AHEAD
-
-
-
-
-
-    #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
-
-
 
     #ATUALIZAR PUBLICAÇÃO
     #Definir por extenso 
@@ -2258,13 +2242,6 @@ def inter_CLI():
         except Exception as e:
             print(f"Erro ao exportar os dados: {e}")
 
-
-
-#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#UNCHECKED CODE
-
-
-
     #APAGAR UMA PUBLICAÇÃO
     def apagarCLI(databank):
         public = procurar1CLI(databank)
@@ -2275,11 +2252,6 @@ def inter_CLI():
             print("A publicação foi apagada com sucesso!")
         elif opção == "n":
             print("A publicação não foi apagada.")
-
-
-#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7
-
-
 
     def analiseauthorCLI(databank):
         freq = {}
